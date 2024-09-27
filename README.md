@@ -21,7 +21,7 @@ Una aplicación web desarrollada con **React**, **Vite**, y **TypeScript** que c
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/FelipeBeleno/ts-col.git
-   cd colombia-info-app
+   cd ts-col
 2. Instala las dependencias:
     ```bash
     npm install
