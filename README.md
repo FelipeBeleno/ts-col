@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Colombia Info App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web desarrollada con **React**, **Vite**, y **TypeScript** que consume la [API de Colombia](https://api-colombia.com/) para proporcionar información básica sobre Colombia, incluyendo presidentes, departamentos, la constitución y mapas.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dashboard**: Muestra datos básicos de Colombia.
+- **Presidentes**: Información sobre los presidentes de Colombia.
+- **Departamentos**: Datos relacionados con los departamentos del país.
+- **Constitución**: Acceso a la constitución de Colombia.
+- **Mapas**: Visualización de mapas de Colombia.
 
-## Expanding the ESLint configuration
+## Tecnologías Usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/FelipeBeleno/ts-col.git
+   cd colombia-info-app
+2. Instala las dependencias:
+    ```bash
+    npm install
+3. Inicia la aplicación:
+    ```bash
+    npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Uso
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Navega a través de las diferentes secciones para explorar la información disponible sobre Colombia.
+- Cada sección está diseñada para ofrecer una experiencia de usuario fluida y fácil de navegar.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu característica (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz un commit (`git commit -m 'Agrega nueva característica'`).
+4. Envía un pull request.
