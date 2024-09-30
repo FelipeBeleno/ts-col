@@ -52,6 +52,20 @@ const PresidentesPage = () => {
                         modules={[EffectCards]}
                         className="mySwiper"
                         loop={true}
+                        onSlideChange={(e) => {
+
+                            console.log(e.realIndex)
+
+
+                            if (presidents !== undefined && presidents?.length > 0) {
+
+                                setPresidentSelected(presidents![e.realIndex])
+
+                            }
+                            return
+
+                        }}
+
                     >
                         {
                             presidents?.map((p, index) => {
